@@ -1,9 +1,13 @@
 一个Julia的初学者写的一个简单的状态机。
 
 该状态机仅有4个API：
+
 create(init_state::Symbol):创建状态机，参数start_state为初始状态。
+
 add_transition(trigger::Symbol,source::Symbol,destination::Symbol,post_function::Function=x->x):添加状态转移规则，参数trigger为状态转移触发条件，source/destination为源/目标状态，post_function(state::Symbol)为状态转移完成时的回调，post_function的参数state为状态转移完成时的状态。
+
 next(trigger::Symbol):在trigger作用下触发状态转移，若当前状态下trigger不起作用，则状态保持不变。
+
 get_state():返回当前状态
 
 安装：
