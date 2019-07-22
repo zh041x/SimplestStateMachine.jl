@@ -69,6 +69,9 @@ print("\n")
 example2()
 
 运行结果为：
+
 blackyellowredyellowgreen
+
 blackyellowredredyellowyellowgreen
+
 由以上程序的输出可看出post_function仅当状态转移成功才执行。
